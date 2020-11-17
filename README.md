@@ -15,3 +15,19 @@
     import 'bootstrap-vue/dist/bootstrap-vue.css'
     Vue.use(BootstrapVue)
     ```
+## 3.環境建立
+  - 安裝 Vue-CLI 命令行工具
+    ```
+    $ npm install -g @ vue / cli
+    ```
+  - Pug 加入 Vue cli 專案
+    ```
+    $ npm i vue-cli-plugin-pug
+    ```
+  - SASS 加入 Vue cli 專案
+    ```
+    $ npm install sass-loader node-sass --save-dev
+## 4.組件規劃
+  ```
+  header、content、footer、menu
+  ```
