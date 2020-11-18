@@ -29,5 +29,10 @@
     $ npm install sass-loader node-sass --save-dev
 ## 4.組件規劃
   ```
-  header、content、footer、menu
+  header、content、footer、app_btn
+  ```
+## 5.底部組件化完成
+  ```
+  下載區域 拆出成元件app_btn
+  資料傳遞串聯化
   ```

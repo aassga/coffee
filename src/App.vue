@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  #app
     headerbox
     articlebox
     footerbox
@@ -19,7 +19,5 @@ export default {
   },
 } 
 </script>
-
-<style lang="sass">
-
+<style lang="sass" scoped>
 </style>
