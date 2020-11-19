@@ -4,21 +4,21 @@
       .row.mt-6
         .col-xl-3.mb-3.mb-xl-0
           img.mb-3(src='../assets/treelogo.png' height='' alt='treelogo')
-          p {{ wellcome }}
+          span.small.text-secondary {{ wellcome }}
         .col-6.col-xl-2.mb-5.mb-xl-0
           span(v-text="themesberg" :class="hlistObject")
           ul(:class="flinkObject")
-            li(v-for="(item,i) in traval" :key="i.traval")
+            li.small(v-for="(item,i) in traval" :key="i.traval")
               a(target='_blank' href='#') {{ item.name }}
 
         .col-6.col-xl-3.mb-5.mb-xl-0
           span(v-text="other" :class="hlistObject")
           ul(:class="flinkObject")
-            li(v-for="(item,i) in features" :key="i.features")
+            li.small(v-for="(item,i) in features" :key="i.features")
               a(href='#') {{ item.name }}
+              
         .col-12.col-xl-4.mb-5.mb-xl-0
-          span.h5 下載專區
-          p.mt-2 ( 請點擊下載 )
+          p 下載 HTD App
 
           //app download
           appbtn
@@ -29,7 +29,7 @@
           div(:class="footerObject")
             span.mb-3.fas.fa-angle-double-down
           div(:class="footerObject")
-            p.font-weight-normal.font-small.mb-0 {{ Copyright }} 
+            p.font-weight-normal.small.mb-0 {{ Copyright }} 
 
 </template>
 <script>
@@ -41,24 +41,26 @@ export default {
   data() {
     return {
       wellcome:"歡迎來到 HTD 嘎嘎旅遊去 ----- Happy Traval Date 請盡情瀏覽",
-      themesberg:"主題",
-      other:"其它",
-      Copyright:"Copyright © 嘎嘎旅遊去 - Happy Traval Date",
+      themesberg:"認識嘎嘎旅遊",
+      other:"旅客服務",
+      Copyright:"Copyright © 2020 HTD . All rights reserved.",
       traval:[
-        { name:'部落客分享' },
-        { name:'訂房系統' },
         { name:'關於我們' },
-        { name:'聯繫我們' },
+        { name:'官方部落格' },
+        { name:'服務條款' },
+        { name:'隱私權政策' },
+        { name:'免責聲明' },
+        { name:'公司公告' },
       ],
       features:[
-        { name:'地圖搜尋' },
-        { name:'評價搜尋' },
-        { name:'價格搜尋' },
-        { name:'地區搜尋' },
+        { name:'熱門打卡景點' },
+        { name:'推薦行程' },
+        { name:'' },
+        { name:'' },
       ],
       hlistObject:{
-        'h5': true, 
-        'font-weight-bold': true,
+        'h6': true, 
+        'font-weight-light': true,
       },
       flinkObject:{
         'footer-links': true, 
@@ -74,7 +76,7 @@ export default {
 </script>
 <style lang="sass" scoped>
   .bg-primary 
-    background-color: #0d1b48!important
+    background-color: #012240!important
   .footer 
     ul 
       margin-bottom: 0
@@ -92,8 +94,7 @@ export default {
         margin-right: -5px
         a
           padding: 5px
-          color:#FFF
-          font-weight: 700
+          color:#8e8e8e
           &:hover 
             color: #c33c54
             transition: 0.8s
