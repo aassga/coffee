@@ -450,41 +450,5 @@
   <!--   file where we handle all the script from the Rubik page   -->
   <script type="text/javascript" src="assets/js/rubick_pres.js"></script>
   <script type="text/javascript" src="assets/js/presentation-page/jquery.sharrre.js"></script>
-  <script type="text/javascript">
-    $('#twitter').sharrre({
-      share: {
-        twitter: true
-      },
-      enableHover: false,
-      enableTracking: true,
-      enableCounter: false,
-      buttons: {
-        twitter: {
-          via: 'CreativeTim'
-        }
-      },
-      click: function(api, options) {
-        api.simulateClick();
-        api.openPopup('twitter');
-      },
-      template: '<i class="fa fa-twitter"></i> Twitter &middot; 532',
-      url: 'http://presentation.creative-tim.com/'
-    });
-
-    $('#facebook').sharrre({
-      share: {
-        facebook: true
-      },
-      enableHover: false,
-      enableTracking: true,
-      enableCounter: false,
-      click: function(api, options) {
-        api.simulateClick();
-        api.openPopup('facebook');
-      },
-      template: '<i class="fa fa-facebook-square"></i> Facebook &middot; 352',
-      url: 'http://presentation.creative-tim.com/'
-    });
-  </script>
 </body>
 </html>
