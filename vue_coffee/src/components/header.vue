@@ -2,27 +2,41 @@
   nav.navbar.navbar-default.navbar-transparent.navbar-fixed-top.navbar-burger
     .container
       .navbar-header
-        button#menu-toggle.navbar-toggle(type='button' data-toggle='collapse' data-target='#example')
-          span.sr-only Toggle navigation
-          span.icon-bar.bar1
-          span.icon-bar.bar2
-          span.icon-bar.bar3
-        a.navbar-brand(target='_blank' href='#') Moustache
-      .collapse.navbar-collapse
-        ul.nav.navbar-nav.navbar-right.navbar-uppercase
-          li
-            a(href data-id='#whoWeAre') Moustache 設計理念
-          li
-            a(href data-id='#workflow') Advantage 產品優勢
-          li
-            a(href data-id='#numbers') statistics 年齡統計
+        span.navbar-brand Moustache
+        ul.nav.navbar-nav.navbar-right.navbar-uppercase(v-for="(item,i) in menudata" :key="i.menudata")
+          li 
+            a(href) 
+              span.textStyle.br-3 {{ item.index }}
+              span {{ item.name }}
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      menudata:[
+        {
+          index:"Moustache",
+          name:"設計理念",
+        },
+        {
+          index:"Advantage",
+          name:"產品優勢",
+        },
+        {
+          index:"statistics",
+          name:"年齡統計",
+        },
+      ],
+    }
+  },
 }
 </script>
 
-<style scoped>
+<style lang="sass" scoped>
+  .navbar 
+    .navbar-brand
+      font-family: 'Reenie Beanie', cursive
+      font-size: 1.7em
+
 </style>
