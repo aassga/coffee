@@ -16,28 +16,28 @@
           .row
             .col-md-3
               .card
-                img(alt='...' src='../assets/pic7.jpg')
+                img(src='../assets/pic7.jpg' alt)
             .col-md-3    
               .card
-                img(alt='...' src='../assets/pic8.jpg')
+                img(src='../assets/pic8.jpg' alt)
             .col-md-3
               .card
-                img(alt='...' src='../assets/pic9.jpg')
+                img(src='../assets/pic9.jpg' alt)
             .col-md-3    
               .card
-                img(alt='...' src='../assets/pic10.jpg')
+                img(src='../assets/pic10.jpg' alt)
             .col-md-3
               .card
-                img(alt='...' src='../assets/pic11.jpg')
+                img(src='../assets/pic11.jpg' alt)
             .col-md-3   
               .card
-                img(alt='...' src='../assets/pic12.jpg')
+                img(src='../assets/pic12.jpg' alt)
             .col-md-3
               .card
-                img(alt='...' src='../assets/pic13.jpg')
+                img(src='../assets/pic13.jpg' alt)
             .col-md-3   
               .card
-                img(alt='...' src='../assets/pic14.jpg')    
+                img(src='../assets/pic14.jpg' alt)    
 </template>
 
 <script>
