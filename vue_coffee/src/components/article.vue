@@ -10,7 +10,7 @@
               .separator-container
                 .separator.line-separator ∎
               h5 {{ h2msg }}
-        a.scroll-arrow.hidden-xs.hidden-sm(href data-scroll='true' data-id='#whoWeAre')
+        a.scroll-arrow.hidden-xs.hidden-sm(data-scroll='true' data-id='#whoWeAre')
           i.fa.fa-angle-down(aria-hidden='true')
     articledream
     articledesign
