@@ -3,7 +3,7 @@
     .container
       .navbar-header
         span.navbar-brand Moustache
-        ul.nav.navbar-nav.navbar-right.navbar-uppercase(v-for="(item,i) in menudata" :key="i.menudata")
+        ul.nav.navbar-nav.navbar-right.navbar-uppercase(v-for="(item,i) in menudata" :key="i.menudata" )
           li 
             a(href) 
               span.textStyle.br-3 {{ item.index }}
@@ -38,5 +38,4 @@ export default {
     .navbar-brand
       font-family: 'Reenie Beanie', cursive
       font-size: 1.7em
-
 </style>
